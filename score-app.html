@@ -1,0 +1,39 @@
+<!-- Create a web application that allows a single user to input one numerical input. The app then will output the two numerical inputs in a table. -->
+
+<!-- Creat a web application that allows multiple users to input two different numerical inputs, that updates over multiple instances. -->
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title> 6 Holes Scoreboard</title>
+  </head>
+  <body>
+    <h1> Input Form </h1>
+      <form id = "inputForm" action="index.html" method="post">
+        <ul>
+          <li>Wins: <input type="number" id="winInput"></li>
+        </ul>
+        <button type="button" name="button">Submit!</button>
+      </form>
+    <h1> Output Form</h1>
+    <table style="width:40%">
+      <tr>
+        <th>Pool Player Full Name</th>
+        <th class = "wins">Wins</th>
+        <th class = "losses">Losses</th>
+      </tr>
+      <tr>
+        <td>Dylan</td>
+        <td id="winRow">5</td>
+        <td id="lossRow">0</td>
+      </tr>
+    </table>
+    <script src="assets/javascript/score-app.js"></script>
+  </body>
+</html>
